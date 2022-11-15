@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CNN Digit Recognition </title>
+</head>
+
+<body style="box-sizing: border-box;background-size: cover; background-color: #cccccc;">
+    <p class="title common">CNN Digit Recognition WebApp using PyTorch and Flask</p>
+    <div class="common">
+        
+    </div>
+    <br/>
+    <div class="common">
+        <div class="boxitem">
+            <canvas id="inputimg" width="196" height="196"></canvas>
+            <button id="clearbtn">Clear</button>
+        </div>
+        <div class="boxitem">
+            <div id="pred">0</div>
+            <div id="prob">Probability : </div>
+        </div>
+        <div class="boxitem">
+            <svg id="probGraph" width="250" height="196"></svg>
+        </div>
+    </div>
+    <div style="box-sizing: border-box;box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);botton:0px;">
+        <div class="content" style="background:cyan; box-sizing: border-box; text-transform: capitalize; margin:10px; ">
+            <span style="color: #000;margin:0">
+                <h3>about</h3></span>
+            <p><justify>
+                Handwritten digit recognition has recently been of very interest among the researchers because of the evolution of various Machine Learning, Deep Learning and Computer Vision algorithms. In this report, We compare the results of some of the most widely used Machine Learning Algorithms like CNN- convolution neural networks and with Deep Learning algorithm like multilayer CNN using Keras with Theano and Tensorflow. MNIST is a dataset which is widely used for handwritten digit recognition. The dataset consist of 60,000 training images and 10,000 test images.The artificial neural neworks can all most mimic the human brain and are a key ingredient in 
+    image processing field.For example Convolution Neural networks with back propagation for image processing.The applications where these handwritten digit recognition can be used are Banking sector where it can be used to maintain the security pin numbers, it can be also used for blind peoples by using sound output.
+            </justify></p>
+    
+    
+        </div>
+        </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="//d3js.org/d3.v5.min.js"></script>
+
+</body>
